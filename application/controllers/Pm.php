@@ -156,6 +156,7 @@ class Pm extends CI_Controller {
 		if($message)
 		{
 			$message = reset($message);
+			
 			// Flag message as read
 			$this->pm_model->flag_read($msg_id);
 
